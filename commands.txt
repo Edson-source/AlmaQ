@@ -1,0 +1,26 @@
+// Create Venv
+python -m venv .venv
+
+// If virtualenv is not available
+Set-ExecutionPolicy Unrestricted -Scope Process
+
+// Activate venv
+.venv\scripts\activate
+
+// Install used packages 
+python -m pip install ....
+
+// Make requirements.txt
+python -m pip freeze > requirements.txt
+
+// Initializate project
+django-admin startproject core
+
+// Initializate application
+django-admin startapp index
+
+// Create admin
+python manage.py createsuperuser
+
+// Run server
+python manage.py runserver
