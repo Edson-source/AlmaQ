@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<html class="wide wow-animation" lang="en">
+  <head>
+    <!-- Site Title-->
+    <title>Contact Us</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic%7CJosefin+Sans:400,700,300italic">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="{% static 'images/ie8-panel/warning_bar_0000_us.jpg' %}" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <!-- Page Loader-->
+    <div id="page-loader">
+      <div class="page-loader-body">
+        <div class="cssload-spinner">
+          <div class="cssload-cube cssload-cube0"></div>
+          <div class="cssload-cube cssload-cube1"></div>
+          <div class="cssload-cube cssload-cube2"></div>
+          <div class="cssload-cube cssload-cube3"></div>
+          <div class="cssload-cube cssload-cube4"></div>
+          <div class="cssload-cube cssload-cube5"></div>
+          <div class="cssload-cube cssload-cube6"> </div>
+          <div class="cssload-cube cssload-cube7"></div>
+          <div class="cssload-cube cssload-cube8"></div>
+          <div class="cssload-cube cssload-cube9"></div>
+          <div class="cssload-cube cssload-cube10"></div>
+          <div class="cssload-cube cssload-cube11"></div>
+          <div class="cssload-cube cssload-cube12"></div>
+          <div class="cssload-cube cssload-cube13"></div>
+          <div class="cssload-cube cssload-cube14"></div>
+          <div class="cssload-cube cssload-cube15"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Page-->
+
+      <!-- Get in Touch-->
+      <section class="section section-md bg-white text-center">
+        <div class="shell">
+          <div class="range range-md-center">
+            <div class="cell-md-11 cell-lg-10">
+              <h2 class="text-bold">Entre em Contato</h2>
+              <p><span class="box-width-2">Você também pode utilizar nosso formulário de contato rápido para fazer perguntas sobre nossos serviços e projetos.</span></p>
+              <div class="layout-columns"> 
+                <div class="layout-columns__main">
+                  <div class="layout-columns__main-inner">
+                    <!-- RD Mailform-->
+                    <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                      <div class="form-wrap">
+                        <input class="form-input" id="Nome" type="text" name="name" data-constraints="@Required">
+                        <label class="form-label" for="Nome">Seu Nome</label>
+                      </div>
+                      <div class="form-wrap">
+                        <input class="form-input" id="Email" type="email" name="email" data-constraints="@Email @Required">
+                        <label class="form-label" for="Email">E-mail</label>
+                      </div>
+                      <div class="form-wrap">
+                        <label class="form-label" for="Mensagem">Sua Mensagem</label>
+                        <textarea class="form-input" id="Mensagem" name="message" data-constraints="@Required"></textarea>
+                      </div>
+                      <div class="form-wrap form-button offset-1">
+                        <a onclick="gotowhatsapp()"><button class="button button-block button-primary-outline button-ujarak" type="submit">Enviar</button></a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="layout-columns__aside">
+                  <div class="layout-columns__aside-item">
+                    <p class="heading-5">Redes Sociais</p>
+                    <div class="divider-modern"></div>
+                    <ul class="list-inline">
+                      <li><a class="icon icon-md icon-gray-7 fa fa-instagram" href="#"></a></li>
+                    </ul>
+                  </div>
+                  <div class="layout-columns__aside-item">
+                    <p class="heading-5">Telefone</p>
+                    <div class="divider-modern"></div>
+                    <div class="unit unit-horizontal unit-spacing-xxs">
+                      <div class="unit__left"><span class="icon icon-md icon-primary material-icons-local_phone"></span></div>
+                      <div class="unit__body"><a href="tel:#">+55 (48) 9868-8914</a></div>
+                    </div>
+                  </div>
+                  <div class="layout-columns__aside-item">
+                    <p class="heading-5">Endereço</p>
+                    <div class="divider-modern"></div>
+                    <div class="unit unit-horizontal unit-spacing-xxs">
+                      <div class="unit__left"><span class="icon icon-md icon-primary material-icons-location_on"></span></div>
+                      <div class="unit__body"><a href="#">Av. Cap. Pedro Fernandes, 1190 - Centro, Araranguá - SC, 88900-033</a></div>
+                    </div>
+                  </div>
+                  <div class="layout-columns__aside-item">
+                    <p class="heading-5">Horário de funcionamento</p>
+                    <div class="divider-modern"></div>
+                    <div class="unit unit-horizontal unit-spacing-xxs">
+                      <div class="unit__left"><span class="icon icon-md icon-primary mdi mdi-clock"></span></div>
+                      <div class="unit__body"><span>Segunda a Sexta</span><br>
+                                              <span>8:00 – 12:00 - 13:30 – 17:30</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="{% static 'js/core.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
+
+    <!--Script WhatsApp-->
+    <script>
+      function gotowhatsapp(){
+          var Nome = document.getElementById("Nome").value;
+          var Email = document.getElementById("Email").value;
+          var Mensagem = document.getElementById("Mensagem").value;
+
+          var url = 
+          "https://wa.me/554898688914?text=" +
+          "Olá, me chamo " +
+          Nome +
+          ". " +
+          Mensagem +
+          ". Meu email para contato: " +
+          Email +
+          ".";
+
+          window.open(url, "_blank").focus();
+      }
+  </script>
+{% endblock %}

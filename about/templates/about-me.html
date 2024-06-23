@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+<html class="wide wow-animation" lang="en">
+  <head>
+    <!-- Site Title-->
+    <title>About Me</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic%7CJosefin+Sans:400,700,300italic">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="{% static 'images/ie8-panel/warning_bar_0000_us.jpg' %}" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <!-- Page Loader-->
+    <div id="page-loader">
+      <div class="page-loader-body">
+        <div class="cssload-spinner">
+          <div class="cssload-cube cssload-cube0"></div>
+          <div class="cssload-cube cssload-cube1"></div>
+          <div class="cssload-cube cssload-cube2"></div>
+          <div class="cssload-cube cssload-cube3"></div>
+          <div class="cssload-cube cssload-cube4"></div>
+          <div class="cssload-cube cssload-cube5"></div>
+          <div class="cssload-cube cssload-cube6"> </div>
+          <div class="cssload-cube cssload-cube7"></div>
+          <div class="cssload-cube cssload-cube8"></div>
+          <div class="cssload-cube cssload-cube9"></div>
+          <div class="cssload-cube cssload-cube10"></div>
+          <div class="cssload-cube cssload-cube11"></div>
+          <div class="cssload-cube cssload-cube12"></div>
+          <div class="cssload-cube cssload-cube13"></div>
+          <div class="cssload-cube cssload-cube14"></div>
+          <div class="cssload-cube cssload-cube15"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Page-->
+    <div class="page">
+      <!-- Page Header-->
+    
+
+      <!-- Breadcrumbs-->
+      <section class="breadcrumbs-custom bg-image">
+        <div class="shell">
+          <h1 class="breadcrumbs-custom__title">Sobre nós</h1>
+          <ul class="breadcrumbs-custom__path">
+            <li><a href="/">Inicio</a></li>
+            <li class="active">Sobre nós</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- About Me-->
+      <section class="section section-md bg-white">
+        <div class="shell">
+          <div class="range range-50 range-sm-center range-md-left">
+            <div class="cell-sm-6 cell-md-5">
+              <div class="thumb-bordered">
+                {% comment %} <video width="437" height="435" controls autoplay>
+                  <source src="https://www.youtube.com/shorts/wuZclEwuja0" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video> {% endcomment %}
+                <iframe width="437" height="435" src="https://www.youtube.com/embed/wuZclEwuja0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="cell-sm-6 cell-md-7">
+              <div class="box-width-3 box-centered">
+                <article class="quote-big">
+                  <p class="q">Somos a ALMAQ</p>
+                  <p class="q">Usinagem e Tornearia </p>
+                </article>
+                <div class="divider"></div>
+                <p class="text-spacing-05">Fundada em julho 2016 no sul do país atualmente atende em Araranguá e região; contamos com mão de obra especializada nos serviços de fresa convencional, torno, solda, manutenção de máquinas industriais e agrícolas, montagem de gabaritos,  dispositivos mecânicos, usinagem de porta moldes e ferramentas de corte.</p>
+
+                <div class=""></div>
+                <p class="text-spacing-05"> Temos como objetivo a eficiência, qualidade, comprometimento com prazos e a melhor relação custo benefício para nossos clientes!</p>
+                  
+                <div class=""></div>
+                <p class="text-spacing-05"> Acreditamos reunir condições para atender as necessidades de sua empresa  e a certeza de uma parceria de sucesso!</p>
+                  
+                <div class=""></div>
+                <p class="text-spacing-05">Aguardamos seu contato para elaboração de orçamento!</p>
+                {% comment %} <div class="group-3-columns" data-lightgallery="group">
+                  <div class="column-item"><a class="thumb-light" href="{% static 'images/Almaq_contato_1.jpeg' %}" data-lightgallery="item"><img src="{% static 'images/Almaq_contato_1.jpeg' %}" alt="" width="120" height="171"/>
+                      <div class="thumb-light__overlay"></div></a></div>
+                  <div class="column-item"><a class="thumb-light" href="{% static 'images/Almaq_contato_2.jpeg' %}" data-lightgallery="item"><img src="{% static 'images/Almaq_contato_2.jpeg' %}" alt="" width="120" height="171"/>
+                      <div class="thumb-light__overlay"></div></a></div>
+                  <div class="column-item"><a class="thumb-light" href="{% static 'images/certificate-1-847x1200.jpg' %}" data-lightgallery="item"><img src="{% static 'images/certificate-1-120x171.jpg' %}" alt="" width="120" height="171"/>
+                      <div class="thumb-light__overlay"></div></a></div>
+                </div> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Best Photos-->
+      <section class="section section-sm bg-gray-lighter text-center"> 
+        <div class="shell">
+          <div class="range range-50 range-sm-center">
+            <div class="cell-md-10 cell-lg-9">
+              <h1>Fotos</h1>
+              {% comment %} <p>In my portfolio, there are hundreds of successful photo shoots and dozens of satisfied customers. All of the couples I’ve been working with were more than satisfied with my works. Check out the gallery to learn more about my skills and style.</p> {% endcomment %}
+            </div>
+          </div>
+        </div>
+        <!-- Owl Carousel-->
+        <div class="owl-carousel-wrap owl-carousel_style-2">
+          <div class="owl-carousel" data-items="2" data-lg-items="3" data-autoplay="true" data-xl-items="3" data-dots="false" data-nav="false" data-stage-padding="0" data-xs-stage-padding="90" data-sm-stage-padding="140" data-md-stage-padding="260" data-lg-stage-padding="1" data-loop="true" data-margin="0" data-mouse-drag="false" data-nav-custom="#owl-carousel-nav" data-center-mode="true" data-speed="500" data-lightgallery="group">
+            {% comment %} <a class="thumb-ruby thumb-mixed_large" href="{% static 'images/group-image-1-1200x800-original.jpg' %}" data-lightgallery="item"><img class="thumb-ruby__image" src="{% static 'images/about-2-649x427.jpg' %}" alt="" width="649" height="427"/> {% endcomment %}
+              </a><a class="thumb-ruby thumb-mixed_large" href="{% static 'images/certificado-almaq.jpeg' %}" data-lightgallery="item"><img class="thumb-ruby__image" src="{% static 'images/certificado-almaq.jpeg' %}" alt="" width="649" height="427"/>
+              <div class="thumb-ruby__caption"> 
+                <p class="thumb-ruby__title heading-3">Certificado</p>
+              </div></a><a class="thumb-ruby thumb-mixed_large" href="{% static 'images/trofeu-almaq.jpeg' %}" data-lightgallery="item"><img class="thumb-ruby__image" src="{% static 'images/trofeu-almaq.jpeg' %}" alt="" width="649" height="427"/>
+              <div class="thumb-ruby__caption"> 
+                <p class="thumb-ruby__title heading-3">Troféu</p>
+              </div style="mx-5"></a><a class="thumb-ruby thumb-mixed_large" href="{% static 'images/Almaq_contato_1.jpeg' %}" data-lightgallery="item"><img class="thumb-ruby__image" src="{% static 'images/Almaq_contato_1.jpeg' %}" alt="" width="649" height="427"/>
+              <div class="thumb-ruby__caption"> 
+                <p class="thumb-ruby__title heading-3">Contatos AlmaQ</p>
+              </div style="mx-5"></a><a class="thumb-ruby thumb-mixed_large" href="{% static 'images/Almaq_contato_2.jpeg' %}" data-lightgallery="item"><img class="thumb-ruby__image" src="{% static 'images/Almaq_contato_2.jpeg' %}" alt="" width="649" height="427"/>
+                <div class="thumb-ruby__caption"> 
+                  <p class="thumb-ruby__title heading-3">Contatos AlmaQ</p>
+            </div></a>
+          </div>
+          <div class="owl-outer-navigation" id="owl-carousel-nav">
+            <button class="owl-arrow owl-arrow-prev">
+              <svg x="0px" y="0px" viewbox="0 0 28.5 16" width="26" height="14">
+                <line x1="27.5" y1="8" x2="1" y2="8" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></line>
+                <polyline fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="8.8,15 1,8 8.8,1"></polyline>
+              </svg>
+            </button>
+            <button class="owl-arrow owl-arrow-next">
+              <svg x="0px" y="0px" viewbox="0 0 28.5 16" width="26" height="14">
+                <line fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="1" y1="8" x2="27.5" y2="8"></line>
+                <polyline fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="19.7,15 27.5,8 19.7,1"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+              </div>
+            </section>
+
+
+
+    </div>
+  </body>
+</html>
+
+{% endblock %}
